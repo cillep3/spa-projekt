@@ -1,0 +1,33 @@
+.nav {
+  width: 20vw;
+
+  .nav-item-about {
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #184059;
+  }
+
+  .nav-item-Maintainable {
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #5d8aa6;
+  }
+
+  .nav-item-contact {
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: #bf7b3f;
+    text-align: center;
+  }
+
+  .nav-links:hover {
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+  }
+}
