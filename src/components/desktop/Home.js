@@ -1,11 +1,11 @@
 import React from 'react'
-import './Index.scss';
+import './Home.scss';
 import picOne from "../../assets/front-desktop/what-we-do.png"
 import picTwo from "../../assets/front-desktop/maintainable.png"
 import picTree from "../../assets/front-desktop/get-in-touch.png"
 
 
-const Index = () => {
+const Home = () => {
 
     return (
         <>
@@ -17,11 +17,11 @@ const Index = () => {
                 </div>
 
                 <div className="picTwo">
-                    <img src={picTwo} alt="What we do" />
+                    <img src={picTwo} alt="Maintainable" />
                 </div>
 
                 <div className="picTree">
-                    <img src={picTree} alt="What we do" />
+                    <img src={picTree} alt="Get in touch" />
                 </div>
 
 
@@ -34,4 +34,4 @@ const Index = () => {
     )
 }
 
-export default Index;
+export default Home;

@@ -1,43 +1,42 @@
+import React, { useState, useEffect } from "react";
 import './App.css';
-import Navbar from './components/Navbar';
+import DesktopView from "./components/desktop/Index";
+import MobileView from "./components/mobile/Index";
+
+// dette er et object som bliver generereret til en funktion
+// Vi gør enhederne skalerbar herunder
+const windowDims = () => ({
+  height: window.innerHeight,
+  width: window.innerWidth,
+});
+
+const App = ({ items }) => {
 
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+  // HER STARTET RESPONSIV DELEN, SOM VI NORMALT LAVER I CSS'en
+  const [dimensions, setDimensions] = useState(windowDims());
 
-import Index from "./components/pages/Index";
-import WhatWeDo from "./components/pages/WhatWeDo";
-import Maintainable from "./components/pages/Maintainable";
-import GetInTouch from "./components/pages/GetInTouch";
+  useEffect(() => {
 
+    const handleResize = () => {
+      setDimensions(windowDims());
+      //console.log(windowDims());
+    };
 
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
 
-const App = () => {
+  }, []);
 
-  return (
-
-
-    <Router>
-
-      <Navbar />
-
-      <Switch>
-
-
-        <Route exact path='/' component={Index} />
-        <Route exact path='/about' component={WhatWeDo} />
-        <Route exact path='/maintainable' component={Maintainable} />
-        <Route exact path='/contact' component={GetInTouch} />
-
-      </Switch>
+  // Her laver vi et breakpoint, så vi ved hvornår vi vil returnere DesktopView komponentet, eller MobilView komponentet, og ud fra dette breakpoint laver vi en condition
+  // DETTE ER EN FORSIMPLET IF SÆTNING
+  const breakpoint = 550;
+  return dimensions.width < breakpoint ? <MobileView items={items} /> : <DesktopView items={items} />;
+  // HER SLUTTER RESPONSIVE DELEN
 
 
-
-    </Router>
-  );
 }
 
 export default App;

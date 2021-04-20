@@ -1,0 +1,48 @@
+.allPictures{
+    background-image: linear-gradient(to top, #b1d2e8 0%, #fff 100%);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.2fr 0.5fr;
+    width: 100%;
+    height: 1000px;
+
+    .picOne{
+    margin-top: 50px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    transform: translate(+4%);
+    }
+
+    .picTwo{
+    margin-top: 20px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    transform: translate(+4%);
+
+    }
+
+    .picTree{
+    margin-top: 10px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    transform: translate(+4%);
+    }
+
+    .text {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    
+        button {
+        color: white;
+        background-color: black;
+        padding: 5px;
+        border: none;
+        font-size: 15px;
+        font-weight: bold;
+        width: 210px;
+        float: right;
+        margin-right: 15px;
+
+        }
+      }
+}
