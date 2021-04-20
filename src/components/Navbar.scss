@@ -1,33 +1,182 @@
-.nav {
-  width: 20vw;
+.navbar {
+  background: #F1F1F1;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 
-  .nav-item-about {
-    list-style: none;
-    height: 50px;
-    width: 50px;
-    border-radius: 10px;
-    background-color: #184059;
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.container {
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.navbar-logo {
+  justify-self: start;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon {
+  margin-right: 0.5rem;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  justify-content: end;
+}
+
+.nav-item-home, .nav-item-whatwedo, .nav-item-maintainable, .nav-item-contact{
+  height: 80px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-item-home:hover {
+  border-bottom: 5px solid #C7DEEE;
+}
+
+.home-active{
+  background-color:white;
+
+}
+
+.nav-item-whatwedo:hover{
+  border-bottom: 5px solid #184059;
+}
+
+.whatwedo-active{
+  background-color:#abcfe6;
+}
+
+.nav-item-maintainable:hover {
+  border-bottom: 5px solid #5d8aa6;
+}
+
+.maintainable-active{
+  background-color: #bfddef;
+}
+
+.nav-item-contact:hover {
+  border-bottom: 5px solid #bf7b3f;
+}
+
+.contact-active{
+  background-color: #ffb472;
+}
+
+.nav-links {
+  color: #184059;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  font-weight: bold;
+}
+
+.fa-bars {
+  color: #fdfdfd;
+}
+
+.mobile-menu-ikon{
+  display: none;
+}
+
+/*  MOBIL OG TABLET */
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
   }
 
-  .nav-item-Maintainable {
-    list-style: none;
-    height: 50px;
-    width: 50px;
-    border-radius: 10px;
-    background-color: #5d8aa6;
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
   }
 
-  .nav-item-contact {
-    list-style: none;
-    height: 50px;
-    width: 50px;
-    border-radius: 10px;
-    background-color: #bf7b3f;
+  .nav-menu.active {
+    background: #1c2237;
+    left: 0;
+    opacity: 1;
+    transition: all 0.6s ease;
+    z-index: 1;
+  }
+
+  .home-active,.whatwedo-active, .maintainable-active, .contact-active{
+  background-color: rgba(199, 40, 40, 0);
+  }
+
+  .nav-links {
+    color: #fff;
     text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    margin-left: -60px;
+    
   }
 
-  .nav-links:hover {
-    border-bottom: 4px solid #fff;
-    transition: all 0.2s ease-out;
+  .nav-item-home:hover, .nav-item-whatwedo:hover, .nav-item-maintainable:hover, .nav-item-contact:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  }
+
+  .nav-item-home:hover, .nav-item-whatwedo:hover, .nav-item-maintainable:hover, .nav-item-contact:hover {
+    border: none;  
+  }
+
+  .nav-item-home, .nav-item-whatwedo, .nav-item-maintainable, .nav-item-contact {
+    width: 100%;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .mobile-menu-ikon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
   }
 }
