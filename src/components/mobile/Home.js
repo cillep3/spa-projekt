@@ -14,6 +14,7 @@ const Home = () => {
     return (
         <>
             <div className="allPictures">
+
                 <div className="picOne">
                     <img src={picOne} alt="What we do" />
 
@@ -30,6 +31,7 @@ const Home = () => {
                 <div className='text'>
                     <button>And yet... more to come</button>
                 </div>
+
             </div>
         </>
     )

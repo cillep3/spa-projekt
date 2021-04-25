@@ -17,6 +17,7 @@ const GetInTouch = () => {
                 <div className="sideBar">
                     <img src={sideBarPic} alt="What we do" />
                 </div>
+
                 <div className="text">
                     <h1>There for you and <span className="contact">care for you </span>...</h1>
                     <p>santo shaman next level air plant messenger bag street art blue bottle semiotics lyft bitters four dollar toast. Single-origin coffee taxidermy authentic 90's heirloom butcher tilde austin microdosing man bun jianbing. I'm baby normcore blog brunch, subway tile you probably haven't.Brunch vape narwhal fam, mumblecore chia lumbersexual helvetica. </p>
