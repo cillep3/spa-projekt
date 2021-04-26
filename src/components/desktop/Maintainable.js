@@ -8,7 +8,7 @@ const Maintainable = () => {
         <>
             <div className="wrapper" style={{ backgroundColor: "#bfddef" }}>
                 <div className="sideBar">
-                    <img src={sideBarPic} alt="What we do" />
+                    <img src={sideBarPic} alt="Maintainable" />
                 </div>
                 <div className="text">
                     <h1>Keeping your all <span className="maintainable">up to date </span>...</h1>
@@ -26,6 +26,6 @@ const Maintainable = () => {
 
     )//END RETURN
 
-} //END RETURN
+} //END CONST
 
 export default Maintainable;

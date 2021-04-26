@@ -3,9 +3,9 @@ import './App.css';
 import DesktopView from "./components/desktop/Index";
 import MobileView from "./components/mobile/Index";
 
-// dette er et object som bliver generereret til en funktion
-// Vi gør enhederne skalerbar herunder
-const windowDims = () => ({
+
+// Her gør jeg enhederne skalerbar
+const responsivWindow = () => ({
   height: window.innerHeight,
   width: window.innerWidth,
 });
@@ -13,14 +13,13 @@ const windowDims = () => ({
 const App = ({ items }) => {
 
 
-  // HER STARTET RESPONSIV DELEN, SOM VI NORMALT LAVER I CSS'en
-  const [dimensions, setDimensions] = useState(windowDims());
+  // Her starter responsivdelen
+  const [dimensions, setDimensions] = useState(responsivWindow());
 
   useEffect(() => {
 
     const handleResize = () => {
-      setDimensions(windowDims());
-      //console.log(windowDims());
+      setDimensions(responsivWindow());
     };
 
     window.addEventListener('resize', handleResize);
@@ -30,9 +29,8 @@ const App = ({ items }) => {
 
   }, []);
 
-  // Her laver vi et breakpoint, så vi ved hvornår vi vil returnere DesktopView komponentet, eller MobilView komponentet, og ud fra dette breakpoint laver vi en condition
-  // DETTE ER EN FORSIMPLET IF SÆTNING
-  const breakpoint = 550;
+  // Her laver jeg et breakpoint
+  const breakpoint = 960;
   return dimensions.width < breakpoint ? <MobileView items={items} /> : <DesktopView items={items} />;
   // HER SLUTTER RESPONSIVE DELEN
 

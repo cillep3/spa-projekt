@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Navbar.scss';
+import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';

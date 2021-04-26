@@ -57,6 +57,7 @@
 
 .home-active{
   background-color:white;
+  max-height: 65px;
 
 }
 
@@ -66,6 +67,7 @@
 
 .whatwedo-active{
   background-color:#abcfe6;
+  max-height: 65px;
 }
 
 .nav-item-maintainable:hover {
@@ -74,6 +76,7 @@
 
 .maintainable-active{
   background-color: #bfddef;
+  max-height: 65px;
 }
 
 .nav-item-contact:hover {
@@ -82,6 +85,7 @@
 
 .contact-active{
   background-color: #ffb472;
+  max-height: 65px;
 }
 
 .nav-links {
@@ -94,13 +98,10 @@
   font-weight: bold;
 }
 
-.fa-bars {
-  color: #fdfdfd;
-}
-
 .mobile-menu-ikon{
   display: none;
 }
+
 
 /*  MOBIL OG TABLET */
 @media screen and (max-width: 960px) {

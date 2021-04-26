@@ -2,7 +2,7 @@ import React from 'react'
 import './Pages.scss';
 import sideBarPic from '../../assets/front-desktop/what-we-do-page.png'
 
-const WhatWeDo = ({ items }) => {
+const WhatWeDo = () => {
 
     return (
         <>

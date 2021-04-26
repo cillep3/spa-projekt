@@ -15,7 +15,7 @@ const GetInTouch = () => {
         <>
             <div className="wrapper" style={{ backgroundColor: "#ffb472" }}>
                 <div className="sideBar">
-                    <img src={sideBarPic} alt="What we do" />
+                    <img src={sideBarPic} alt="Get in touch" />
                 </div>
 
                 <div className="text">
