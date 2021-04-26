@@ -1,10 +1,9 @@
 import React from 'react'
 import './PagesMobil.scss';
 import { Card } from 'react-bootstrap';
-
-
 import topPic from "../../assets/front-mobil/getintouch.png";
 import logo from "../../assets/logo-b.png";
+
 import staffOne from '../../assets/front-desktop/whatwedo-small.png';
 import staffTwo from '../../assets/front-desktop/maintainable-small.png';
 import staffTree from '../../assets/front-desktop/getintouch-small.png';
