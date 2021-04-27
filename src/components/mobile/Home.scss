@@ -14,14 +14,13 @@
     }
 
     .picTwo{
-    margin-top: 20px;
+    margin-top: 25px;
     grid-column: 1/2;
     grid-row: 2/3;
     transform: translate(+4%);
     }
 
     .picTree{
-    margin-top: 10px;
     grid-column: 1/2;
     grid-row: 3/4;
     transform: translate(+4%);
@@ -41,7 +40,6 @@
         width: 210px;
         float: right;
         margin-right: 15px;
-
         }
       }
 }

@@ -49,8 +49,6 @@ const Navbar = () => {
                         </li>
                     </ul>
 
-
-
                 </div>
 
             </div>
@@ -58,4 +56,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar;
