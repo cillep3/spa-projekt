@@ -1,3 +1,5 @@
+
+/* Den overordnet navbar */
 .navbar {
   background: #F1F1F1;
   height: 80px;
@@ -10,12 +12,14 @@
   z-index: 999;
 }
 
+/* Navbar indhold */
 .navbar-container {
   display: flex;
   justify-content: space-between;
   height: 80px;
 }
 
+/* Placering af indhold */
 .container {
   z-index: 1;
   width: 100%;
@@ -33,10 +37,7 @@
   align-items: center;
 }
 
-.navbar-icon {
-  margin-right: 0.5rem;
-}
-
+/* Nav styling */
 .nav-menu {
   display: flex;
   align-items: center;
@@ -51,16 +52,18 @@
   border-bottom: 2px solid transparent;
 }
 
+/* HOME KNAPPEN */
 .nav-item-home:hover {
   border-bottom: 5px solid #C7DEEE;
 }
 
+/* Den blivende kasse */
 .home-active{
   background-color:white;
   max-height: 65px;
-
 }
 
+/* WHAT WE DO KNAPPEN */
 .nav-item-whatwedo:hover{
   border-bottom: 5px solid #184059;
 }
@@ -70,6 +73,7 @@
   max-height: 65px;
 }
 
+/* MAINTAINABLE KNAPPEN */
 .nav-item-maintainable:hover {
   border-bottom: 5px solid #5d8aa6;
 }
@@ -79,6 +83,7 @@
   max-height: 65px;
 }
 
+/* CONTACT KNAPPEN */
 .nav-item-contact:hover {
   border-bottom: 5px solid #bf7b3f;
 }
@@ -88,6 +93,7 @@
   max-height: 65px;
 }
 
+/* Tekst styling */
 .nav-links {
   color: #184059;
   display: flex;
@@ -104,6 +110,7 @@
 
 
 /*  MOBIL OG TABLET */
+
 @media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;
@@ -121,6 +128,7 @@
     transition: all 0.5s ease;
   }
 
+ /*  Nav boksen */
   .nav-menu.active {
     background: #1c2237;
     left: 0;
@@ -152,10 +160,6 @@
     border: none;  
   }
 
-  .nav-item-home, .nav-item-whatwedo, .nav-item-maintainable, .nav-item-contact {
-    width: 100%;
-  }
-
   .navbar-logo {
     position: absolute;
     top: -20px;
@@ -171,13 +175,5 @@
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-  }
-
-  .nav-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 120px;
   }
 }
